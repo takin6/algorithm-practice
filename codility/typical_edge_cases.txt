@@ -1,0 +1,9 @@
+
+
+1. empty array
+2. negative numbers
+3. simple solution
+  ex) 1,2,3,4,5
+      5,4,3,2,1
+
+4. if the result is negative, return -1
