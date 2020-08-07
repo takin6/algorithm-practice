@@ -19,13 +19,19 @@ for i in range(1, N+1):
       dp[i][j] = s
 
   if i>2:
-    for j in range(1, 4):
+    for j in range(1,4):
       if dp[i][j] != 0 and dp[i-1][j] != 0:
-        dp[i-1][j] -= dp[i-1][j]
+        dp[i-1][j] -= dp[i-2][j]
         dp[i][j] -= dp[i-2][j]
 
 print(menu)
 print(list(range(1,N+1)))
 for i in range(N+1):
   print(dp[i])
+print(sum(dp[N]))
 print(sum(dp[N]) % 10000)
+
+
+#参考
+# https://atcoder.jp/contests/joi2012yo/submissions/14674073
+# https://atcoder.jp/contests/joi2012yo/submissions/14828646

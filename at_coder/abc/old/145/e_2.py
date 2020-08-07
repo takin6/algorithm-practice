@@ -32,12 +32,3 @@ for i in range(1, N+1):
   ans = max(ans, dp[i][-1], dp[i-1][-2]+b)
 
 print(max(ans, dp[-1][-1]))
-
-  # prev_a,prev_b = foods[i]
-  # last = dp[i].index(0)
-  # for j in range(last+1, min(T, prev_a+a+1)):
-  #   dp[i+1][j] = dp[i][j] + prev_b +  b
-
-  # for j in range(T):
-  #   dp[i+1][j] = max(dp[i+1][j], dp[i][j])
-

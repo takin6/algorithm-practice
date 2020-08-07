@@ -29,3 +29,5 @@ for i in range(M+1):
 
 print(res)
 # print(dp)
+for d in dp:
+  print(d)

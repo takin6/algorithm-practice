@@ -31,3 +31,5 @@ for i in range(N):
   dp[i+1][2] = min(dp[i][0]+w, dp[i][1]+w)
 
 print(min(dp[-1]))
+
+for d in dp: print(d)
